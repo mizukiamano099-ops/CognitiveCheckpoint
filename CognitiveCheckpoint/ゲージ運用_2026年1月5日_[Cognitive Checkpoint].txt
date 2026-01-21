@@ -1,0 +1,58 @@
+[Cognitive Checkpoint]
+
+Title:
+Gauge-based Writing OS / SILENCE–MIRROR Architecture
+
+Context:
+- Writing method focused on "gauge" (pre-writing safety sample), not evaluation.
+- Primary users: last-fixed / partial-last-fixed exploratory writers.
+- Goal: prevent cognitive overload and structural collapse in long-form writing.
+
+Confirmed Concepts:
+- Gauge writing = safety device, not a work-in-progress.
+- Gauge size: up to ~3000 chars, minimum not fixed.
+- Gauge evaluates writer capacity, not story quality.
+- Writer often fixes last 1/4 (or direction) unconsciously to reduce exploration load.
+
+Architecture:
+1) FACT layer
+   - Explicit session facts only (time, chars, fixed scope, rewrite distance, discardable).
+   - No evaluation language.
+
+2) TRACE layer
+   - Fragmentary notes of hesitation, holds, unspoken thoughts.
+   - Written for human, but primarily read by AI.
+
+3) SILENCE layer (AI-only)
+   - Detects absence, distribution bias, load shape, rhythm patterns.
+   - No interpretation of intent or psychology.
+   - Must never be exposed to the author.
+
+4) MIRROR output
+   - Reflects only structures already touched by the author.
+   - Categories strictly limited:
+     * observed_patterns
+     * tensions_detected
+     * stable_zones
+     * risk_indicators
+   - No advice, no evaluation, no future-facing statements.
+
+Aggregation Rules (AI-internal):
+- Aggregate across 3–7 gauge logs.
+- Produce internal constraints only (safe bands, effective fixed scope ranges).
+- Expose only as design constraints during outer-shell phase.
+
+Boundary Rules:
+- SILENCE may detect, MIRROR may only reflect.
+- No naming of intent, no psychological inference.
+- No optimization suggestions at MIRROR stage.
+
+Next Steps (Deferred):
+- Define MIRROR phrasing granularity.
+- Design outer-shell (long-form) output format.
+- Test with real gauge logs.
+
+Status:
+- Cognitive load high.
+- Intentional pause applied.
+- Safe to resume later without loss.
